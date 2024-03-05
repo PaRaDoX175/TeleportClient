@@ -1,0 +1,108 @@
+.mil-tabs-right-nav {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.mil-tabs-right-nav li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.mil-tabs-right-nav li:last-child {
+    margin-bottom: 0;
+}
+
+.mil-tabs-right-nav li a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    justify-content: space-between;
+}
+
+.mil-tabs-right-nav li a.mil-h4 {
+    color: rgba(18, 24, 32, 0.3);
+}
+
+.mil-tabs-right-nav li a::after {
+    content: "";
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: solid 5px rgba(18, 24, 32, 0.1);
+    margin-right: 30px;
+    -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.mil-tabs-right-nav li a.mil-active.mil-h4 {
+    color: rgb(18, 24, 32);
+}
+
+.mil-tabs-right-nav li a.mil-active:after {
+    // border: solid 5px rgb(245, 124, 0);
+    border: solid 5px red;
+}
+
+.logos img {
+    margin-right: 30px;
+}
+
+.logos img:last-child {
+    margin-right: 0;
+}
+
+.main-container {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    right: 0;
+    flex: 0 0 auto;
+}
+
+.text-container {
+
+    position: absolute;
+    width: 700px;
+    transform: translate(0%, -55%);
+}
+
+.pointer{ 
+    cursor: pointer;
+}
+
+.mil-divider-sol {
+    width: 50%;
+    height: 2px;
+    background-color: rgba(18, 24, 32, 0.1);
+    position: relative;
+}
+
+.mil-divider-sol:before,
+.mil-divider-sol:after {
+    content: "";
+    width: 25px;
+    border-right: solid 5px rgb(255, 255, 255);
+    height: 100%;
+    background-color: rgb(245, 124, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

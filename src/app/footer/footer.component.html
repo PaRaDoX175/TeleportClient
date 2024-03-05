@@ -1,0 +1,110 @@
+<section
+  id="contacts"
+  class="mil-contact mil-gradient-bg mil-p-120-0 mil-dark-bg"
+  style="padding-bottom: 30px"
+>
+  <img src="./assets/img/map.png" alt="background" class="mil-footer-bg" />
+  <div class="mil-deco mil-deco-accent" style="top: 0; right: 10%"></div>
+  <div class="container">
+    <h2 class="mil-light mil-mb-90">
+      <span class="mil-accent">Свяжитесь</span> с нами
+    </h2>
+    <div style="display: flex">
+      <div class="col-lg-6" style="color: white">
+        <img
+          src="./assets/img/logo-light.png"
+          alt=""
+          class="mil-logo mil-mb-30"
+          style="width: 140px"
+        />
+        <p class="mil-light mil-light-soft" style="margin-bottom: 45px">
+          2307 Beverley Rd Brooklyn, <br />New York 11226 USA.
+        </p>
+        <ul class="mil-simple-list mil-mb-15">
+          <li class="mil-light">
+            <span class="mil-accent">+7</span>&nbsp;<span class="mil-light-soft"
+              >701 796 00 08</span
+            >
+          </li>
+          <li>
+            <span class="mil-accent">info</span
+            ><span class="mil-light mil-light-soft">&commat;t-port.kz</span>
+          </li>
+        </ul>
+      </div>
+      <form #myForm="ngForm" class="col-lg-6" (ngSubmit)="onSubmit(myForm)">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mil-input-frame mil-mb-30">
+              <label for="name"
+                ><span class="mil-light">Имя</span
+                ><span class="mil-accent">Обязательно</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Enter Your Name Here"
+                ngModel
+              />
+            </div>
+            <div class="mil-input-frame mil-mb-30">
+              <label for="email"
+                ><span class="mil-light">Email адрес</span
+                ><span class="mil-accent">Обязательно</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="EmailAddress"
+                placeholder="Your Email"
+                ngModel
+              />
+            </div>
+            <div class="mil-input-frame mil-mb-60">
+              <label for="phone"
+                ><span class="mil-light">Телефон</span
+                ><span class="mil-light-soft">Не обязательно</span></label
+              >
+              <input
+                type="text"
+                placeholder="Your Phone"
+                id="phone"
+                name="Phone"
+                ngModel
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mil-input-frame mil-mb-30">
+              <label for="message"
+                ><span class="mil-light">Сообщение</span
+                ><span class="mil-accent">Обязательно</span></label
+              >
+              <textarea
+                placeholder="Your Message"
+                id="message"
+                name="Message"
+                ngModel
+              ></textarea>
+            </div>
+          </div>
+          <div *ngIf="!service.isLoading" class="col-12">
+            <button type="submit" class="mil-button mil-accent-bg mil-fw">
+              <span style="font-weight: 700">Отправить сообщение</span>
+            </button>
+          </div>
+          <div *ngIf="service.isLoading" class="col-12">
+            <button
+              [disabled]="true"
+              type="submit"
+              class="mil-button mil-accent-bg mil-fw disabled-button"
+            >
+              <span style="font-weight: 700">Отправка сообщения...</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

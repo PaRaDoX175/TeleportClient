@@ -1,0 +1,108 @@
+.main-container {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    right: 0;
+    flex: 0 0 auto;
+}
+
+.text-container {
+
+    position: absolute;
+    width: 600px;
+    transform: translate(0%, -55%);
+}
+
+.logos img {
+    margin-right: 30px;
+}
+
+.logos img:last-child {
+    margin-right: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.column-element {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mil-tabs-left-nav-third {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/* .mil-tabs-left-nav:before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(18, 24, 32, 0.1);
+} */
+.mil-tabs-left-nav-third li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.mil-tabs-left-nav-third li:last-child {
+    margin-bottom: 0;
+}
+
+.mil-tabs-left-nav-third li a {
+    /* padding-left: 45px; */
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.mil-tabs-left-nav-third li a.mil-h4 {
+    color: rgba(18, 24, 32, 0.3);
+}
+
+.mil-tabs-left-nav-third li a:before {
+    content: "";
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: solid 5px rgba(18, 24, 32, 0.1);
+    margin-right: 30px;
+    /* position: absolute;
+  left: 0;
+  top: 5px; */
+    -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.mil-tabs-left-nav-third li a.mil-active.mil-h4 {
+    color: rgb(18, 24, 32);
+}
+
+.mil-tabs-left-nav-third li a.mil-active:before {
+    // border: solid 5px rgb(245, 124, 0);
+    border: solid 5px red;
+}

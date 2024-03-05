@@ -1,0 +1,51 @@
+<section id="projects" class="mil-banners mil-p-120-0 mil-mb-50">
+  <div class="container">
+    <div class="mil-text-center mil-mb-50">
+      <h2 class="mil-mb-30">Наши <span class="mil-accent">проекты</span></h2>
+      <h5>
+        У нас обширный опыт работы с национальными компаниями и государственным
+        сектором
+      </h5>
+    </div>
+
+    <div class="swiper-container mil-banners-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of arr">
+          <div class="mil-banner-slide">
+            <img
+              style="height: 500px; width: auto"
+              src="{{ item.imageUrl }}"
+              alt="banner"
+              class="mil-banner-bg"
+              data-swiper-parallax="-100"
+              data-swiper-parallax-scale="1.1"
+            />
+            <div class="mil-overlay"></div>
+            <div class="row justify-content-end align-items-center">
+              <div class="col-lg-8 col-xl-6" data-swiper-parallax-y="-300">
+                <div class="mil-icon-box mil-sb-inner mil-relative">
+                  <h4 class="mil-mb-10" *ngFor="let title of item.title">
+                    {{ title }}
+                  </h4>
+                  <div class="mil-divider mil-divider-left mil-mb-30"></div>
+                  <h6 *ngIf="item.description.length > 0">
+                    {{ item.description }}
+                  </h6>
+                  <ul style="padding-left: 20px" *ngIf="item.table.length > 0">
+                    <li
+                      *ngFor="let table of item.table"
+                      style="color: rgb(133, 133, 133)"
+                    >
+                      {{ table }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mil-banners-pagination"></div>
+  </div>
+</section>

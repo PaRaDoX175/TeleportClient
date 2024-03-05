@@ -1,0 +1,26 @@
+.main-container {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    right: 0;
+    flex: 0 0 auto;
+}
+
+.text-container {
+
+    position: absolute;
+    width: 600px;
+    transform: translate(0%, -55%);
+}
+
+.logos img {
+    margin-right: 30px;
+}
+
+.logos img:last-child {
+    margin-right: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+<section class="mil-p-120-60">
+  <div class="mil-deco" style="top: 0; right: 15%"></div>
+  <div class="container">
+    <div class="mil-mb-90">
+      <h2 class="mil-mb-30">
+        Техническая поддержка и <br />комплексное IT-обслуживание
+      </h2>
+      <h5 class="mil-mb-30">
+        Мы предоставляем полный спектр услуг по технической поддержке и
+        IT-обслуживанию:
+      </h5>
+    </div>
+    <div class="row">
+      <div class="col-xl-4" *ngFor="let item of arr">
+        <div
+          class="mil-hover-card mil-box-center mil-mb-30"
+          style="height: 300px"
+        >
+          <div
+            class="mil-deco mil-deco-accent"
+            style="top: -10%; right: -10%"
+          ></div>
+          <div
+            class="mil-icon-frame mil-icon-frame-md mil-icon-bg mil-mb-30"
+            style="flex-shrink: 0; flex-grow: 0"
+          >
+            <img src="img/icons/md/23.svg" alt="icon" />
+          </div>
+          <h5 class="mil-mb-30">{{ item }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
