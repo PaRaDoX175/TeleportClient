@@ -2,3 +2,59 @@
     color: red !important;
     font-weight: 600;
 }
+
+.mil-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-numb {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+    .mil-navigation {
+        font-size: 15px;
+        display: block;
+    }
+    .contact {
+        padding-right: 50px;
+    }
+    .d-p {
+        padding-top: 0px !important;
+    }
+    .nav-numb {
+        display: block;
+    }
+    .nav-numb h5{
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact {
+        display: none;
+    }   
+}
+
+// @media screen and (min-width: 1201px) {
+//     .adaptive-smth {
+//         width: 800px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//     }
+// }
+
+// @media screen and (min-width: 1400px) {
+//     .adaptive-smth {
+//         width: 880px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//     }
+// }

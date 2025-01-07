@@ -36,6 +36,5 @@ export class PartnersComponent {
     margin: 100,
     autoplay: true,
     center: true,
-    // autoHeight: true,
   };
 }

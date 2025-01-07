@@ -6,3 +6,16 @@
 .disabled-button:hover {
     background-color: rgb(218, 71, 71);
 }
+
+.mil-button:disabled {
+    cursor: default;
+    background-color: rgb(218, 71, 71);
+}
+
+@media screen and (max-width: 991px) {
+    .form-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+}

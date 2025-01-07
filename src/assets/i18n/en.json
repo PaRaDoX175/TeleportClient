@@ -1,0 +1,53 @@
+{
+    "BANNER_TEXT": "Helping you reach the top",
+    "PROJECTS": [
+        {
+    "imageUrl": "./assets/img/Teleport_AGP.jpg",
+    "title": ["Asian Gas Pipeline (AGP)", "Beineu-Shymkent Gas Pipeline (BSGP)"],
+    "description": "Our experts have been involved in the implementation of the following tasks:",
+    "table": [
+      "implementation of electronic document management system",
+      "development of SAP modules",
+      "delivery and implementation of data storage systems",
+      "IT maintenance and support"
+    ]
+  },
+  {
+    "imageUrl": "./assets/img/Teleport_Sinooil.jpg",
+    "title": ["Sinooil, Petrochina, PetroKazakhstan"],
+    "description": "With the participation of our specialists, the following have been implemented:",
+    "table": [
+      "delivery and implementation of network and server equipment, as well as data storage systems",
+      "network equipment setup for redundancy and security",
+      "technical maintenance of data storage systems"
+    ]
+  },
+  {
+    "imageUrl": "./assets/img/Teleport_Airport.jpg",
+    "title": ["Ural City Airport"],
+    "description": "",
+    "table": [
+      "participation in the development and implementation of airport security and IT infrastructure",
+      "our expert involvement in creating a modern technological base for operational information exchange and airport process management"
+    ]
+  },
+  {
+    "imageUrl": "./assets/img/Teleport_KazAtomProm.jpg",
+    "title": ["JSC KazAtomProm"],
+    "description": "Our specialists participated in the installation of fiber-optic communication lines with a length of 600 kilometers, ensuring stable and high-speed data transmission between production nodes. This significantly improved communication and contributed to further development",
+    "table": []
+  },
+  {
+    "imageUrl": "./assets/img/Teleport_AstanaExpo.jpg",
+    "title": ["Astana EXPO 2017"],
+    "description": "Our team of specialists actively participated in the successful implementation of a security system, which includes more than 2000 cameras. Thanks to this, we were able to provide wide coverage of video surveillance and control, significantly increasing the level of security",
+    "table": []
+  },
+  {
+    "imageUrl": "./assets/img/Teleport_Kazakhtelecom.jpg",
+    "title": ["JSC Kazakhtelecom"],
+    "description": "We participated in the construction of reliable transport networks and access networks for the country's largest Internet service provider, ensuring stable data transmission and high-speed Internet for users",
+    "table": []
+  }
+    ]
+}

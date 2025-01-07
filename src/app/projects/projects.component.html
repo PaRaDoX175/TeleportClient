@@ -10,11 +10,11 @@
 
     <div class="swiper-container mil-banners-slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" *ngFor="let item of arr">
+        <div class="swiper-slide">
           <div class="mil-banner-slide">
             <img
               style="height: 500px; width: auto"
-              src="{{ item.imageUrl }}"
+              src="./assets/img/Teleport_AGP.jpg"
               alt="banner"
               class="mil-banner-bg"
               data-swiper-parallax="-100"
@@ -24,21 +24,178 @@
             <div class="row justify-content-end align-items-center">
               <div class="col-lg-8 col-xl-6" data-swiper-parallax-y="-300">
                 <div class="mil-icon-box mil-sb-inner mil-relative">
-                  <h4 class="mil-mb-10" *ngFor="let title of item.title">
-                    {{ title }}
-                  </h4>
+                  <h4 class="mil-mb-10">Азиатский гозопровод (АГП)</h4>
+                  <h4 class="mil-mb-10">Газопровод Бейнеу-Шымкент(ГБШ)</h4>
                   <div class="mil-divider mil-divider-left mil-mb-30"></div>
-                  <h6 *ngIf="item.description.length > 0">
-                    {{ item.description }}
+                  <h6>
+                    {{ "PROJECTS.0.description" | translate }}
                   </h6>
-                  <ul style="padding-left: 20px" *ngIf="item.table.length > 0">
-                    <li
-                      *ngFor="let table of item.table"
-                      style="color: rgb(133, 133, 133)"
-                    >
-                      {{ table }}
+                  <ul style="padding-left: 20px">
+                    <li style="color: rgb(133, 133, 133)">
+                      внедрение системы электронного документооборота
+                    </li>
+                    <li style="color: rgb(133, 133, 133)">
+                      разработка модулей SAP
+                    </li>
+                    <li style="color: rgb(133, 133, 133)">
+                      поставка и ввод в эксплуатацию систем хранения данных
+                    </li>
+                    <li style="color: rgb(133, 133, 133)">
+                      IT-обслуживание и техподдержка
                     </li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mil-banner-slide">
+            <img
+              style="height: 500px; width: auto"
+              src="./assets/img/Teleport_Sinooil.jpg"
+              alt="banner"
+              class="mil-banner-bg"
+              data-swiper-parallax="-100"
+              data-swiper-parallax-scale="1.1"
+            />
+            <div class="mil-overlay"></div>
+            <div class="row justify-content-end align-items-center">
+              <div class="col-lg-8 col-xl-6" data-swiper-parallax-y="-300">
+                <div class="mil-icon-box mil-sb-inner mil-relative">
+                  <h4 class="mil-mb-10">
+                    Sinooil, Petrochina, PetroKazakhstan
+                  </h4>
+                  <div class="mil-divider mil-divider-left mil-mb-30"></div>
+                  <h6>При участии наших специалистов были реализованы:</h6>
+                  <ul style="padding-left: 20px">
+                    <li style="color: rgb(133, 133, 133)">
+                      поставка и ввод в эксплуатацию сетевого и серверного
+                      оборудования, а также систем хранения данных
+                    </li>
+                    <li style="color: rgb(133, 133, 133)">
+                      настройка сетевого оборудования для обеспечения резерва и
+                      безопасности
+                    </li>
+                    <li style="color: rgb(133, 133, 133)">
+                      техническое обслуживание систем хранения данных
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mil-banner-slide">
+            <img
+              style="height: 500px; width: auto"
+              src="./assets/img/Teleport_Airport.jpg"
+              alt="banner"
+              class="mil-banner-bg"
+              data-swiper-parallax="-100"
+              data-swiper-parallax-scale="1.1"
+            />
+            <div class="mil-overlay"></div>
+            <div class="row justify-content-end align-items-center">
+              <div class="col-lg-8 col-xl-6" data-swiper-parallax-y="-300">
+                <div class="mil-icon-box mil-sb-inner mil-relative">
+                  <h4 class="mil-mb-10">Аэропорт г. Уральск</h4>
+                  <div class="mil-divider mil-divider-left mil-mb-30"></div>
+                  <ul style="padding-left: 20px">
+                    <li style="color: rgb(133, 133, 133)">
+                      участие в разработке и реализации системы безопасности и
+                      IT-инфраструктуры аэропорта
+                    </li>
+                    <li style="color: rgb(133, 133, 133)">
+                      наша экспертная вовлеченность в создание современной
+                      технологической базы для оперативного обмена информацией и
+                      управления процессами аэропорта
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mil-banner-slide">
+            <img
+              style="height: 500px; width: auto"
+              src="./assets/img/Teleport_KazAtomProm.jpg"
+              alt="banner"
+              class="mil-banner-bg"
+              data-swiper-parallax="-100"
+              data-swiper-parallax-scale="1.1"
+            />
+            <div class="mil-overlay"></div>
+            <div class="row justify-content-end align-items-center">
+              <div class="col-lg-8 col-xl-6" data-swiper-parallax-y="-300">
+                <div class="mil-icon-box mil-sb-inner mil-relative">
+                  <h4 class="mil-mb-10">АО "КазАтомПром"</h4>
+                  <div class="mil-divider mil-divider-left mil-mb-30"></div>
+                  <h6>
+                    Наши специалисты участвовали в монтаже волоконно-оптических
+                    линий связи протяженностью 600 километров, обеспечив
+                    стабильную и высокоскоростную передачу данных между
+                    производственными узлами. Это значительно улучшило
+                    коммуникацию и способствовало дальнейшему развитию
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mil-banner-slide">
+            <img
+              style="height: 500px; width: auto"
+              src="./assets/img/Teleport_AstanaExpo.jpg"
+              alt="banner"
+              class="mil-banner-bg"
+              data-swiper-parallax="-100"
+              data-swiper-parallax-scale="1.1"
+            />
+            <div class="mil-overlay"></div>
+            <div class="row justify-content-end align-items-center">
+              <div class="col-lg-8 col-xl-6" data-swiper-parallax-y="-300">
+                <div class="mil-icon-box mil-sb-inner mil-relative">
+                  <h4 class="mil-mb-10">Astana EXPO 2017</h4>
+                  <div class="mil-divider mil-divider-left mil-mb-30"></div>
+                  <h6>
+                    Наша команда специалистов активно участвовала в успешной
+                    реализации системы безопасности, которая включает в себя
+                    более 2000 камер. Благодаря этому, мы смогли обеспечить
+                    широкий охват видеонаблюдения и контроля, что значительно
+                    повысило уровень безопасности
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mil-banner-slide">
+            <img
+              style="height: 500px; width: auto"
+              src="./assets/img/Teleport_Kazakhtelecom.jpg"
+              alt="banner"
+              class="mil-banner-bg"
+              data-swiper-parallax="-100"
+              data-swiper-parallax-scale="1.1"
+            />
+            <div class="mil-overlay"></div>
+            <div class="row justify-content-end align-items-center">
+              <div class="col-lg-8 col-xl-6" data-swiper-parallax-y="-300">
+                <div class="mil-icon-box mil-sb-inner mil-relative">
+                  <h4 class="mil-mb-10">АО "Казахтелеком"</h4>
+                  <div class="mil-divider mil-divider-left mil-mb-30"></div>
+                  <h6>
+                    Мы участвовали в построении надежных транспортных сетей и
+                    сетей доступа для крупнейшего интернет-провайдера страны, в
+                    рамках обеспечения стабильной передачи данных и
+                    высокоскоростного интернета для пользователей
+                  </h6>
                 </div>
               </div>
             </div>

@@ -5,23 +5,24 @@ import { Component } from '@angular/core';
   selector: 'app-infrastruct',
   templateUrl: './infrastruct.component.html',
   styleUrls: ['./infrastruct.component.scss'],
-  animations: [
-    trigger('fadeInOut', [
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate('0.5s ease-in-out', style({ opacity: 1 })),
-      ]),
-      transition(':leave', [
-        animate('0.5s ease-in-out', style({ opacity: 0 })),
-      ]),
-    ]),
-  ],
+  // animations: [
+  //   trigger('fadeInOut', [
+  //     transition(':enter', [
+  //       style({ opacity: 0 }),
+  //       animate('0.5s ease-in-out', style({ opacity: 1 })),
+  //     ]),
+  //     transition(':leave', [
+  //       animate('0.5s ease-in-out', style({ opacity: 0 })),
+  //     ]),
+  //   ]),
+  // ],
 })
 export class InfrastructComponent {
   activeText: string = 'text1';
 
   showText(textId: string) {
     this.activeText = textId;
+    console.log('clicked');
   }
   getAnimationState(text: string) {
     return this.activeText === text ? 'visible' : 'hidden';

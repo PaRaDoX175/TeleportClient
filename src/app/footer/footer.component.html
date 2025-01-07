@@ -9,7 +9,7 @@
     <h2 class="mil-light mil-mb-90">
       <span class="mil-accent">Свяжитесь</span> с нами
     </h2>
-    <div style="display: flex">
+    <div class="form-container" style="display: flex">
       <div class="col-lg-6" style="color: white">
         <img
           src="./assets/img/logo-light.png"
@@ -46,6 +46,7 @@
                 name="Name"
                 placeholder="Enter Your Name Here"
                 ngModel
+                required
               />
             </div>
             <div class="mil-input-frame mil-mb-30">
@@ -59,12 +60,13 @@
                 name="EmailAddress"
                 placeholder="Your Email"
                 ngModel
+                required
               />
             </div>
             <div class="mil-input-frame mil-mb-60">
               <label for="phone"
                 ><span class="mil-light">Телефон</span
-                ><span class="mil-light-soft">Не обязательно</span></label
+                ><span class="mil-accent">Обязательно</span></label
               >
               <input
                 type="text"
@@ -72,6 +74,7 @@
                 id="phone"
                 name="Phone"
                 ngModel
+                required
               />
             </div>
           </div>
@@ -86,15 +89,18 @@
                 id="message"
                 name="Message"
                 ngModel
+                required
               ></textarea>
             </div>
           </div>
-          <div *ngIf="!service.isLoading" class="col-12">
-            <button type="submit" class="mil-button mil-accent-bg mil-fw">
-              <span style="font-weight: 700">Отправить сообщение</span>
-            </button>
-          </div>
-          <div *ngIf="service.isLoading" class="col-12">
+          <button
+            type="submit"
+            class="mil-button mil-accent-bg mil-fw"
+            [disabled]="!myForm.valid"
+          >
+            <span style="font-weight: 700">Отправить сообщение</span>
+          </button>
+          <!-- <div *ngIf="service.isLoading" class="col-12">
             <button
               [disabled]="true"
               type="submit"
@@ -102,7 +108,7 @@
             >
               <span style="font-weight: 700">Отправка сообщения...</span>
             </button>
-          </div>
+          </div> -->
         </div>
       </form>
     </div>

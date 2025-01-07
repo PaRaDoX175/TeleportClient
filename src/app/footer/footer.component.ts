@@ -10,7 +10,7 @@ import { FooterService } from './footer.service';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  baseUrl = 'http://localhost:5045/api/message';
+  // baseUrl = 'http://localhost:5045/api/message';
 
   constructor(public service: FooterService) {}
 
@@ -19,6 +19,8 @@ export class FooterComponent {
   // }
 
   onSubmit(form: NgForm) {
+    this.service.isLoading = true;
     this.service.sendEmail(form.value);
+    this.service.isLoading = false;
   }
 }

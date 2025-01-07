@@ -77,12 +77,12 @@
     flex: 0 0 auto;
 }
 
-.text-container {
+// .text-container {
 
-    position: absolute;
-    width: 700px;
-    transform: translate(0%, -55%);
-}
+//     position: absolute;
+//     width: 700px;
+//     transform: translate(0%, -55%);
+// }
 
 .pointer{ 
     cursor: pointer;
@@ -105,4 +105,78 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition: opacity 1s ease-in-out;
+    
+    box-sizing: content-box;
+}
+
+.text-container {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    animation: fadeInOut 0.5s ease forwards;
+}
+
+.wrapper-for-component {
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// .reverse-container {
+//     height: 500px;
+// }
+
+@media screen and (max-width: 991px) {
+    .text-container {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        opacity: 0;
+        animation: fadeInOut 0.5s ease forwards;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .reverse-container {
+        // height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .wrapper-for-component {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logos {
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .logos img {
+        margin-right: 0px;
+    }
 }
